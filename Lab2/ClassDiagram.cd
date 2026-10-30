@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Shape">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAABAAAEAGAAAAAAAAAAAAA=</HashCode>
+      <FileName>shape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PointShape">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>shape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LineShape">
+    <Position X="9" Y="4" Width="1.5" />
+    <InheritanceLine Type="Shape" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="3.017" />
+        <Point X="8.5" Y="3.625" />
+        <Point X="9.625" Y="3.625" />
+        <Point X="9.625" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>shape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RectShape">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>shape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EllipseShape">
+    <Position X="7.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>shape.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Editor">
+    <Position X="15.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAQAAAABAAAAAQEAAAAAAAAAA=</HashCode>
+      <FileName>editor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShapeEditor">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <InheritanceLine Type="Editor" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.25" Y="1.062" />
+        <Point X="14.25" Y="1.062" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>IAGBAIAAAgAABAAAABAAQAACABAACAAAEACAAAAAQAA=</HashCode>
+      <FileName>editor.h</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="pcshape" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PointEditor">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="ShapeEditor" ManuallyRouted="true">
+      <Path>
+        <Point X="13.5" Y="4.492" />
+        <Point X="13.5" Y="5.376" />
+        <Point X="13.5" Y="5.376" />
+        <Point X="13.5" Y="5.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>editor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LineEditor">
+    <Position X="15.25" Y="5.5" Width="1.5" />
+    <InheritanceLine Type="ShapeEditor" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.5" Y="4.492" />
+        <Point X="13.5" Y="5.462" />
+        <Point X="15.25" Y="5.462" />
+        <Point X="15.25" Y="5.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>editor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RectEditor">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <InheritanceLine Type="ShapeEditor" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="14.25" Y="3.562" />
+        <Point X="14.653" Y="3.562" />
+        <Point X="14.653" Y="3.031" />
+        <Point X="15.25" Y="3.031" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>editor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EllipseEditor">
+    <Position X="15.25" Y="4" Width="1.5" />
+    <InheritanceLine Type="ShapeEditor" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="3.562" />
+        <Point X="14.653" Y="3.562" />
+        <Point X="14.653" Y="4.375" />
+        <Point X="15.25" Y="4.375" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>editor.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShapeObjectsEditor">
+    <Position X="10.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAQAAAABAAAAAyUAgCAAAAAEA=</HashCode>
+      <FileName>shape_editor.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pse" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
